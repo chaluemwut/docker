@@ -1,0 +1,4 @@
+FROM python:latest
+RUN apt-get update
+RUN apt-get install -y curl
+RUN pip3 install flask gunicorn pymongo numpy tweepy py3tools==0.0.5
